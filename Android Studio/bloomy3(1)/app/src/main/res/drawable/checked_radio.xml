@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- Define the background color when RadioButton is checked -->
+    <solid android:color="@color/pinkflowers" />
+
+    <!-- Define the border -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/white" />
+
+    <!-- Define the size of the RadioButton -->
+    <size android:width="20dp" android:height="20dp" />
+</shape>

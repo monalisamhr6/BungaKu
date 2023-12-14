@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".tambahUlasan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.AddProductActivity">
+
+    <TextView
+        android:id="@+id/tv_reviewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center"
+        tools:text="Reviews"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:numStars="5"
+        android:progressTint="@color/orange"
+        android:secondaryProgressTint="@android:color/transparent"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_tambahUlasan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:paddingLeft="15dp"
+            tools:text="Tambah Ulasan" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/ulasanEditText"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/custom_borders"
+        android:gravity="top"
+        android:hint="Kondisi barang baik, pengantaran cepat, terima kasiih"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:maxLength="50"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/tambahUlasanButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:text="Tambah Ulasan"
+        android:layout_below="@id/ratingBar"
+        android:backgroundTint="@color/pinkflowers"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/lihatUlasan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lihat ulasan"
+        android:layout_marginLeft="132dp"
+        android:backgroundTint="@color/pinkflowers"
+        android:layout_below="@id/tambahUlasanButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:onClick="showMoreClicked"/>
+    </LinearLayout>
+
+</RelativeLayout>

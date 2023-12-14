@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- RadioButton in checked state -->
+    <item android:drawable="@drawable/checked_radio" android:state_checked="true" />
+
+    <!-- RadioButton in unchecked state -->
+    <item android:drawable="@drawable/unchecked_radio" />
+
+</selector>

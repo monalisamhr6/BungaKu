@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+                tools:context=".DetailProdukPenjual">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:id="@+id/fl1"
+            android:layout_height="257.12dp"
+            tools:ignore="MissingConstraints">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="233.33dp"
+                android:layout_gravity="top|start"
+                tools:ignore="UselessParent">
+                <ImageView
+                    android:layout_width="415dp"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="48dp"
+                    android:src="@drawable/home_bg"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_rekomendasi"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:ignore="MissingConstraints" />
+                <ImageView
+                    android:layout_width="415dp"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="48dp"
+                    android:src="@drawable/home_bg"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_rekomendasi"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:ignore="MissingConstraints" />
+                <ImageView
+                    android:layout_width="415dp"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="48dp"
+                    android:src="@drawable/home_bg"
+                    app:layout_constraintBottom_toTopOf="@+id/tv_rekomendasi"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="290dp"
+                    android:layout_gravity="start"
+                    android:src="@drawable/kategori"
+                    android:layout_marginStart="30dp"
+                    tools:layout_editor_absoluteX="-80dp"
+                    tools:layout_editor_absoluteY="105dp"
+                    tools:ignore="MissingConstraints" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewKategori"
+                    android:layout_width="302dp"
+                    android:layout_height="72dp"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="109dp"
+                    android:layout_marginBottom="13.73dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:clipToPadding="false"
+                    android:overScrollMode="always"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="4"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="41dp"
+                    tools:layout_editor_absoluteY="146dp"
+                    tools:listitem="@layout/item_kategori" />
+
+                <ImageButton
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:layout_marginStart="335dp"
+                    android:layout_marginTop="129dp"
+                    android:layout_marginBottom="13.73dp"
+                    android:src="@drawable/more_kategori"
+                    tools:ignore="MissingConstraints"
+                    android:scaleType="fitCenter"
+                    tools:layout_editor_absoluteX="341dp"
+                    tools:layout_editor_absoluteY="166dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:id="@+id/tv_kategori"
+                    android:layout_width="151dp"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="128dp"
+                    android:text="Kategori"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="80dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="118dp"
+                    android:gravity="center"
+                    tools:ignore="MissingConstraints" />
+
+            </FrameLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:id="@+id/tv_rekomendasi"
+                android:layout_marginTop="250dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Rekomendasi"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="257dp"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/tv_seeAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="290dp"
+                android:text="Lihat Semua"
+                android:layout_marginTop="250dp"
+                android:textColor="@color/pinkflowers"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:layout_editor_absoluteY="268dp"
+                tools:ignore="MissingConstraints" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listOfBouqet"
+                android:layout_width="411dp"
+                android:layout_height="385dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="290dp"
+                android:layout_marginEnd="16dp"
+                android:minHeight="370dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_rekomendasi"
+                app:spanCount="3"
+                tools:listitem="@layout/activity_cardview" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="259dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/search_img"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewCart"
+            android:layout_width="32dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/fix_cart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.204"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="21dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="348dp"
+            android:src="@drawable/bungaku_logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/bottomNavigation"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginTop="710dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/listOfBouqet"
+                tools:layout_editor_absoluteX="3dp">
+
+                <!-- Home Button -->
+                <ImageButton
+                    android:id="@+id/homeButton"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/pinkflowers"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/home"
+                    />
+
+                <!-- History Button -->
+                <ImageButton
+                    android:id="@+id/listButton"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/pinkflowers"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/history" />
+
+                <!-- Chats Button -->
+                <ImageButton
+                    android:id="@+id/chatsButton"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/pinkflowers"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/chat" />
+
+                <!-- Account Button -->
+                <ImageButton
+                    android:id="@+id/accountButton"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/pinkflowers"
+                    android:padding="5dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/baseline_account_circle_24"
+                    />
+
+            </LinearLayout></FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

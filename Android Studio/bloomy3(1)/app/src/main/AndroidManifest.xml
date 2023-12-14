@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.Bloomy3"
+        tools:targetApi="31">
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".addproduk"
+            android:exported="false" />
+        <activity
+            android:name=".Produk"
+            android:exported="false" />
+        <activity
+            android:name=".home_kategori"
+            android:exported="false" />
+        <activity
+            android:name=".HomePenjual"
+            android:exported="false" />
+        <activity
+            android:name=".items"
+            android:exported="false" />
+        <activity
+            android:name=".itemAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".itemAdapter2"
+            android:exported="false" />
+        <activity
+            android:name=".itemAdapterPenjual"
+            android:exported="false" />
+        <activity
+            android:name=".items2"
+            android:exported="false" />
+        <activity
+            android:name=".adapterProduk2"
+            android:exported="false" />
+        <activity
+            android:name=".DetailProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailProdukPenjual"
+            android:exported="false" />
+        <activity
+            android:name=".tambahUlasan"
+            android:exported="false" />
+        <activity
+            android:name=".UlasanAdapter2"
+            android:exported="false" />
+        <activity
+            android:name=".adapterUlasan2"
+            android:exported="false" />
+        <activity
+            android:name=".Ulasan2"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartItem"
+            android:exported="false" />
+        <activity
+            android:name=".CartAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".MetodePembayaranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".tambahMetodePembayaran"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreenPenjual"
+            android:exported="false" />
+        <activity
+            android:name=".HomeScreenPembeli"
+            android:exported="false" />
+        <activity
+            android:name=".HomePembeli"
+            android:exported="false" />
+        <activity
+            android:name=".History"
+            android:exported="false" />
+        <activity
+            android:name=".HistoryAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".chat"
+            android:exported="false" />
+        <activity
+            android:name=".EditProduk"
+            android:exported="false" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true">
+        </activity>
+    </application>
+
+</manifest>
